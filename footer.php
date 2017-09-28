@@ -20,17 +20,19 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
+
+</body>
 <script>
 // Get the modal
-var modal = document.getElementById('myModal');
+var modal = document.getElementById('jobModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("postaJOB");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
+// When the user clicks on the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
 }
@@ -47,5 +49,4 @@ window.onclick = function(event) {
     }
 }
 </script>
-</body>
 </html>
