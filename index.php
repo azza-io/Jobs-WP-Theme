@@ -12,14 +12,14 @@
  * @package Azza-IO\'s_JobsBoard
  */
 
-get_header(); ?>
+ get_header();
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+ ?>
+ <div id="content">
 
-		</main><!-- #main -->
 
-	</div><!-- #primary -->
 
-<?php
-get_footer();
+
+ </div>
+
+ <?php get_footer(); ?>
