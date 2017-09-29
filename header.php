@@ -22,23 +22,18 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'azza-io-job-board' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="header-logo">
-			<img src="https://unsplash.it/75/75" />
+			<img src="/wp-content/themes/azza-io-job-board/images/RedfoxIndustries-Logo.png" />
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">
 			<?wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'main-menu' ) ); ?>
 
-
-
-
-
-	</header><!-- #masthead -->
-
-
+</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -5,8 +5,14 @@
 acf_form_head();
 get_header();
 ?>
-<!-- Trigger/Open The Modal -->
-<button id="postaJOB">Post A Job</button>
+<div class="postajob-container">
+	<div class="postajob-inner">
+		<h2>Looking to advertise or post a job for free?</h2>
+		<button id="postaJOB" class="azza-io-btn btn-danger">Post A Job</button>
+	</div>
+</div>
+
+
 
 <!-- The Modal -->
 <div id="jobModal" class="modal">
@@ -28,8 +34,9 @@ get_header();
 	</div>
 
 </div>
-<h1>Jobs Page</h1>
-<table class="table table-striped">
+<h1 class='page-title'><?php echo get_the_title(); ?></h1>
+
+<ul class="azza-io-ul">
 
 <!-- The Basic WP Loop -->
 <?php if ( have_posts() ) : ?>
@@ -40,42 +47,20 @@ get_header();
 				) );
 	?>
     <?php while ( have_posts() ) : the_post(); ?>
-				<tr>
-				<td><?php the_field('company'); ?></td>
-				<td><?php the_title(); ?></td>
-				<td><?php echo get_the_date(); ?></td>
-				</tr>
+				<li><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+				<span class="company"><?php the_field('company'); ?></span>
+				<span class="job-title"><?php the_title(); ?></span>
+				<span class="job-date"><?php echo get_the_date('M n'); ?></span>
+				</a></li>
+
 
 
     <?php endwhile; ?>
-	</tbody>
-</table>
+	</ul>
+
 
 
 <?php endif; ?>
-
-
-
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
-    </tbody>
-  </table>
 
 
 

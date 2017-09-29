@@ -15,7 +15,9 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<p>"Credits when Credits are due" said by <a href="https://azza.io">Azza.io</a></p>
+			<div class="made-with">
+				<p class="love">Made with <i class="icon ion-heart"></i> by <a href="https://azza.io">Azza.io</p>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
