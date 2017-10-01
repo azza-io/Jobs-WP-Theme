@@ -60,6 +60,15 @@ get_header(); ?>
 		</div>
 	</div>
 
+	<div class="application-container">
+		<div class="application">
+			<h3>Want to apply for this job?</h3>
+			<div class="application-link">
+				<a href="<?php the_field('application_link'); ?>"><?php the_field('application_link'); ?></a>
+			</div>
+		</div>
+	</div>
+
 	</div>
 </main>
 <?php

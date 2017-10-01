@@ -19,7 +19,10 @@ get_header();
 
 	<!-- Modal content -->
 	<div class="modal-content">
+		<div class="modal-header">
+			<h2>Post A Job</h2>
 		<span class="close">&times;</span>
+		</div>
 		<?php acf_form_head(); ?>
 		<?php /* The loop */ ?>
 		<?php while ( have_posts() ) : the_post(); ?>
