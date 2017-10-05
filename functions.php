@@ -8,8 +8,7 @@ function enqueue_mystyles() {
 	wp_enqueue_style('bootstrapcss',"//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
   wp_enqueue_style("customtheme-style", get_stylesheet_uri());
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
-
-
+	wp_enqueue_style( 'hamburgercss', get_template_directory_uri() . '/css/hamburgers.min.css');
 }
 add_action ("wp_enqueue_scripts", "enqueue_mystyles");
 

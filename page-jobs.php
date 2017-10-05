@@ -8,7 +8,9 @@ get_header();
 <div class="postajob-container">
 	<div class="postajob-inner">
 		<h2>Looking to advertise or post a job for free?</h2>
-		<button id="postaJOB" class="azza-io-btn btn-danger">Post A Job</button>
+		<div class="postajob-btn-wrapper">
+			<button id="postaJOB" class="azza-io-btn btn-danger">Post A Job</button>
+		</div>
 	</div>
 </div>
 
@@ -19,7 +21,7 @@ get_header();
 
 	<!-- Modal content -->
 	<div class="modal-content">
-		<div class="modal-header">
+		<div class="modal_header">
 			<h2>Post A Job</h2>
 		<span class="close">&times;</span>
 		</div>

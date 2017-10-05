@@ -28,11 +28,28 @@
 
 	<header id="masthead" class="site-header">
 		<div class="header-logo">
-			<img src="/wp-content/themes/azza-io-job-board/images/RedfoxIndustries-Logo.png" />
+			<img src="/wp-content/themes/azza-io-job-board/images/RedfoxIndustries-Logo.png"/>
+		</div>
+		<div class="header-logo-mobile">
+			<img src="/wp-content/themes/azza-io-job-board/images/RedfoxIndustries-Mobile-Logo.png" />
 		</div>
 
+		<nav  id="site-navigation_mobile" class="main-navigation_mobile">
+			<button class="hamburger hamburger--collapse" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner">
+					</span>
+			  </span>
+			</button>
+			<div class="mobile-menu">
+				<div class="mobile-menu-container">
+					<?wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'main-menu' ) ); ?>
+				</div>
+			</div>
+		</nav>
 		<nav id="site-navigation" class="main-navigation">
 			<?wp_nav_menu( array( 'theme_location' => 'main-menu', 'container_class' => 'main-menu' ) ); ?>
+		</nav>
 
 </header><!-- #masthead -->
 

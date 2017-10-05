@@ -16,7 +16,8 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
 			<div class="made-with">
-				<p class="love">Made with <i class="icon ion-heart"></i> by <a href="https://azza.io">Azza.io</p>
+				<p class="love">Made with <i class="icon ion-heart"></i> by
+					<a href="https://azza.io">Azza.io</a></p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
@@ -50,5 +51,13 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+</script>
+<script>
+jQuery('.hamburger').click( function() {
+  jQuery(this).toggleClass('is-active');
+});
+jQuery('.hamburger').click( function() {
+  jQuery('.mobile-menu').toggleClass('open');
+});
 </script>
 </html>
